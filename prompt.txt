@@ -1,0 +1,16 @@
+dalam pemograman java, apa integer overflow detection
+
+Baca dua bilangan bulat bertipe int.
+Program harus menjumlahkan kedua bilangan tersebut.
+Jika terjadi integer overflow, cetak:
+OVERFLOW
+Jika tidak terjadi overflow, cetak hasil penjumlahan.
+⚠️ DILARANG menggunakan long, BigInteger, atau try-catch untuk mendeteksi overflow.
+
+3. cara run kode tersebut gimana, di visual stuido code
+4. arti ini  java Soal1
+Error: Could not find or load main class Soal1
+Caused by: java.lang.ClassNotFoundException: Soal1  
+PS C:\Users\ASUS\Documents\GitHub\t01-data-types-pbo-2526-ge-VentyolaNapitupulu>
+
+5. 
