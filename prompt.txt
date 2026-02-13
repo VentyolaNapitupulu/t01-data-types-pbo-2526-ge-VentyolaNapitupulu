@@ -1,6 +1,10 @@
-dalam pemograman java, apa integer overflow detection
+Ventyola Rohati Napitupulu
+12S24042
+Kumpulan Prompt Praktikum 1
 
-Baca dua bilangan bulat bertipe int.
+1. dalam pemograman java, apa integer overflow detection
+
+2. Baca dua bilangan bulat bertipe int.
 Program harus menjumlahkan kedua bilangan tersebut.
 Jika terjadi integer overflow, cetak:
 OVERFLOW
@@ -13,4 +17,107 @@ Error: Could not find or load main class Soal1
 Caused by: java.lang.ClassNotFoundException: Soal1  
 PS C:\Users\ASUS\Documents\GitHub\t01-data-types-pbo-2526-ge-VentyolaNapitupulu>
 
-5. 
+5. arti ini  java Soal1
+Error: Could not find or load main class Soal1
+Caused by: java.lang.ClassNotFoundException: Soal1  
+PS C:\Users\ASUS\Documents\GitHub\t01-data-types-pbo-2526-ge-VentyolaNapitupulu>
+
+6. ini untuk compile javac src/*.java -d bin, ini untuk jalankan cd bin && java Main
+7. lanjutkan di templete ini untuk soal 1 tadi import java.util.*; 
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        // TODO: implement solution
+    }
+}
+
+8. untuk compile ini javac src/*.java -d bindN UNTUK MENJALANKAN INI cd bin && java Main, APA ARTINYA
+9. MUNCUL PESAN 
+PS C:\Users\ASUS\Documents\GitHub\t01-data-types-pbo-2526-ge-VentyolaNapitupulu> cd bin && java Main
+At line:1 char:8
++ cd bin && java Main
++        ~~
+The token '&&' is not a valid statement separator   
+in this version.
+    + CategoryInfo          : ParserError: (:) [],  
+    ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : InvalidEndOfLine 
+
+10. PS C:\Users\ASUS\Documents\GitHub\t01-data-types-pbo-2526-ge-VentyolaNapitupulu\bin> javac src/*.java -d bin
+error: Invalid filename: src/*.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+PS C:\Users\ASUS\Documents\GitHub\t01-data-types-pbo-2526-ge-VentyolaNapitupulu\bin> cd bin
+cd : Cannot find path 'C:\Users\ASUS\Documents\GitH
+ub\t01-data-types-pbo-2526-ge-VentyolaNapitupulu\bi 
+n\bin' because it does not exist.
+At line:1 char:1
++ cd bin
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\ 
+   Users\ASUS\D...itupulu\bin\bin:String) [Set-Lo   
+  cation], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microso  
+   ft.PowerShell.Commands.SetLocationCommand 
+
+11. Soal 2 — Float vs Double Precision Trap!
+Deskripsi
+
+Baca dua bilangan desimal.
+
+Jumlahkan keduanya menggunakan float
+
+Jumlahkan keduanya menggunakan double
+
+Hitung selisih absolut dari kedua hasil tersebut
+
+Output harus ditampilkan dengan 6 digit di belakang koma.
+
+12.  ini merupakan main yang sama dikerjakan dengan soal 1
+13. satukan dengan soal sebelumnya
+14. tapi asdos mengatakan bahwa akan ada logika if else antar soal gitu, ada 5 soal ku, nanti bakal 5 if else nya gtu
+15. kenapa saat ku run muncul seperti ini 0.1 0.2
+Exception in thread "main" java.util.InputMismatchException
+        at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+        at java.base/java.util.Scanner.next(Scanner.java:1594)
+        at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+        at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+        at Main.main(Main.java:7)
+PS C:\Users\ASUS\Documents\GitHub\t01-data-types-pbo-2526-ge-VentyolaNapitupulu>
+16.cara merunkan nya mengguanakan ini sebagai compiler javac src/*.java -d bin, dan menjakankan cd bin && java Main bagaimana mksdnya
+17. kalau mau merunkan lagi apakah langkahnya sama?
+18. tapi muncul pesan gini  cd bin
+cd : Cannot find path 'C:\Users\ASUS\Documents\GitH
+ub\t01-data-types-pbo-2526-ge-VentyolaNapitupulu\bi 
+n\bin' because it does not exist.
+At line:1 char:1
++ cd bin
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\  
+   Users\ASUS\D...itupulu\bin\bin:String) [Set-Lo   
+  cation], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microso  
+   ft.PowerShell.Commands.SetLocationCommand   
+19. ini soal nomor 3, lanjutkan kode dari soal 1 dan 2 sebelumnya yang menggunakan if else tadi Soal 3 — Primitive vs Wrapper Comparison!
+Deskripsi
+
+Baca satu bilangan bulat N.
+
+Lakukan langkah berikut:
+
+Simpan N ke dalam objek Integer a
+
+Salin nilai a ke Integer b
+
+Tambahkan 1 ke a
+
+Bandingkan a dan b menggunakan:
+
+operator ==
+
+method equals()
+
+Input
+Soal3 N
+

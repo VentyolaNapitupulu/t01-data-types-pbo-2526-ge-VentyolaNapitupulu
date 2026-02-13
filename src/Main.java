@@ -1,45 +1,100 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int soal = sc.nextInt(); // penentu soal
+        String soal = sc.next();   // Soal1 / Soal2 / Soal3 / Soal4 / Soal5
 
-        if (soal == 1) {
-            /* ===== SOAL 1: INTEGER OVERFLOW ===== */
+        // =========================
+        // SOAL 1
+        // =========================
+        if (soal.equals("Soal1")) {
+
             int a = sc.nextInt();
             int b = sc.nextInt();
 
-            int sum = a + b;
+            int result = a + b;
 
-            if ((a > 0 && b > 0 && sum < 0) ||
-                (a < 0 && b < 0 && sum > 0)) {
+            // Deteksi overflow TANPA long
+            if ((a > 0 && b > 0 && result < 0) ||
+                (a < 0 && b < 0 && result > 0)) {
                 System.out.println("OVERFLOW");
             } else {
-                System.out.println(sum);
+                System.out.println(result);
+            }
+        }
+
+        // =========================
+        // SOAL 2
+        // =========================
+        else if (soal.equals("Soal2")) {
+
+            float xFloat = sc.nextFloat();
+            float yFloat = sc.nextFloat();
+
+            float sumFloat = xFloat + yFloat;
+
+            double xDouble = (double) xFloat;
+            double yDouble = (double) yFloat;
+
+            double sumDouble = xDouble + yDouble;
+
+            double selisih = Math.abs(sumDouble - sumFloat);
+
+            System.out.printf("%.6f\n", selisih);
+        }
+
+        // =========================
+        // SOAL 3
+        // =========================
+        else if (soal.equals("Soal3")) {
+
+            int N = sc.nextInt();
+
+            Integer a = N;
+            Integer b = a;
+
+            a = a + 1;
+
+            System.out.println("==: " + (a == b));
+            System.out.println("equals: " + a.equals(b));
+        }
+
+        // =========================
+        // SOAL 4
+        // =========================
+        else if (soal.equals("Soal4")) {
+
+            String S = sc.next();
+
+            String a = S;
+            String b = new String(S);
+
+            a = a + "X";
+
+            System.out.println("==: " + (a == b));
+            System.out.println("equals: " + a.equals(b));
+        }
+
+        // =========================
+        // SOAL 5
+        // =========================
+        else if (soal.equals("Soal5")) {
+
+            int integerValue = Integer.parseInt(sc.next());
+            double doubleValue = Double.parseDouble(sc.next());
+            boolean boolValue = Boolean.parseBoolean(sc.next());
+
+            double hasil = integerValue * doubleValue;
+
+            if (boolValue == false) {
+                hasil = hasil * -1;
             }
 
-        } else if (soal == 2) {
-            /* ===== SOAL 2: FLOAT vs DOUBLE ===== */
-            double x = sc.nextDouble();
-            double y = sc.nextDouble();
-
-            float sumFloat = (float) x + (float) y;
-            double sumDouble = x + y;
-
-            double diff = Math.abs(sumDouble - sumFloat);
-
-            System.out.printf("%.6f\n", diff);
-
-        } else if (soal == 3) {
-            // TODO: Soal 3
-
-        } else if (soal == 4) {
-            // TODO: Soal 4
-
-        } else if (soal == 5) {
-            // TODO: Soal 5
+            System.out.printf("%.2f\n", hasil);
         }
+
+        sc.close();
     }
 }
