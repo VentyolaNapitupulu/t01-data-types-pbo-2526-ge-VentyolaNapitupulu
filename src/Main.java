@@ -52,10 +52,10 @@ public class Main {
 
             int N = sc.nextInt();
 
-            Integer a = N;
-            Integer b = a;
+            Integer a = N; // Langkah 1: Autoboxing N ke objek a
+            Integer b = a; // Langkah 2: b merujuk ke objek yang sama dengan a
 
-            a = a + 1;
+            a = a + 1; // Langkah 3: a sekarang merujuk ke objek BARU (N + 1)
 
             System.out.println("==: " + (a == b));
             System.out.println("equals: " + a.equals(b));
